@@ -1,6 +1,6 @@
 services:
 - type: web
-  name: v2plus
+  name: v-net
   env: docker
   dockerfilePath: ./Dockerfile
   dockerContext: .
