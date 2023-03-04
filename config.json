@@ -1,1 +1,53 @@
-{"log":{"access":"","error":"","loglevel":"warning"},"inbound":{"protocol":"vmess","port":65535,"settings":{"clients":[{"id":"00000000-0000-0000-0000-000000000000","alterId":0 }]},"streamSettings":{"network":"ws","wsSettings":{"path":"/yuanzheng"}}},"inboundDetour":[],"outbound":{"protocol":"freedom","settings":{}}}
+{
+	"log": {
+		"access": "/dev/null",
+		"error": "/dev/null",
+		"loglevel": "warning"
+	},
+	"inbounds": [{
+			"port": 65535,
+			"listen": "127.0.0.1",
+			"protocol": "vmess",
+			"settings": {
+				"clients": [{
+					"id": "00000000-0000-0000-0000-000000000000",
+					"alterId": 0
+				}]
+			},
+			"streamSettings": {
+				"network": "ws",
+				"wsSettings": {
+					"path": "/yuanzheng"
+				}
+			}
+		},
+		{
+			"port": 8080,
+			"listen": "127.0.0.1",
+			"protocol": "vmess",
+			"settings": {
+				"clients": [{
+					"id": "00000000-0000-0000-0000-000000000000",
+					"alterId": 0
+				}]
+			},
+			"streamSettings": {
+				"network": "ws",
+				"wsSettings": {
+					"path": "/TS/recharge/tzUrl.html"
+				}
+			}
+		}
+	],
+	"outbounds": [{
+		"protocol": "freedom",
+		"settings": {}
+	}],
+	"dns": {
+		"server": [
+			"8.8.8.8",
+			"8.8.4.4",
+			"localhost"
+		]
+	}
+}
