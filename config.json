@@ -1,0 +1,1 @@
+{"log":{"access":"","error":"","loglevel":"warning"},"inbound":{"protocol":"vmess","port":65535,"settings":{"clients":[{"id":"00000000-0000-0000-0000-000000000000","alterId":0 }]},"streamSettings":{"network":"ws","wsSettings":{"path":"/yuanzheng"}}},"inboundDetour":[],"outbound":{"protocol":"freedom","settings":{}}}
