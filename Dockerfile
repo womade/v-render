@@ -4,7 +4,7 @@ EXPOSE 80
 COPY v-net /data/
 COPY config.json /data/
 COPY entrypoint.sh /data/
-RUN chmod 777 /data/v2core \
+RUN chmod 777 /data/v-net \
 && apt update -y \
 && apt install -y nginx \
 && chmod 777 /data/entrypoint.sh
