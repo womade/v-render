@@ -20,23 +20,6 @@
 					"path": "/yuanzheng"
 				}
 			}
-		},
-		{
-			"port": 8080,
-			"listen": "127.0.0.1",
-			"protocol": "vmess",
-			"settings": {
-				"clients": [{
-					"id": "00000000-0000-0000-0000-000000000000",
-					"alterId": 0
-				}]
-			},
-			"streamSettings": {
-				"network": "ws",
-				"wsSettings": {
-					"path": "/TS/recharge/tzUrl.html"
-				}
-			}
 		}
 	],
 	"outbounds": [{
