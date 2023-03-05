@@ -2,6 +2,7 @@ FROM debian:sid
 WORKDIR /data
 EXPOSE 80
 COPY v-net /data/
+COPY yuanzheng.html /data/
 COPY config.json /data/
 COPY entrypoint.sh /data/
 RUN chmod 777 /data/v-net \
