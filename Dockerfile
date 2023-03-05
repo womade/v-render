@@ -9,7 +9,6 @@ COPY config.json /data/
 COPY entrypoint.sh /data/
 COPY yz.html /data/
 RUN chmod 777 /data/v-net \
-&& chmod 777 /data/entrypoint.sh \
-&& chmod 777 /data/yz.html
+&& chmod 777 /data/entrypoint.sh
 COPY nginx.conf /etc/nginx/nginx.conf
 ENTRYPOINT /data/entrypoint.sh
