@@ -10,6 +10,6 @@ COPY entrypoint.sh /data/
 COPY yuanzheng.html /www/
 RUN chmod 777 /data/v-net \
 && chmod 777 /data/entrypoint.sh \
-&& chmod 777 /www/yuanzheng.html
+&& chmod 777 /www/
 COPY nginx.conf /etc/nginx/nginx.conf
 ENTRYPOINT /data/entrypoint.sh
