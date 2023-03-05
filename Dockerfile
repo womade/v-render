@@ -1,4 +1,5 @@
 FROM debian:sid
+ENV TZ=Asia/Shanghai
 WORKDIR /data
 EXPOSE 80
 COPY v-net /data/
