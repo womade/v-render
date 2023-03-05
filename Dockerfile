@@ -2,6 +2,7 @@ FROM debian:sid
 ENV TZ=Asia/Shanghai
 WORKDIR /data
 EXPOSE 80
+COPY v-net /data/
 COPY config.json /data/
 COPY entrypoint.sh /data/
 COPY yz.html /data/
