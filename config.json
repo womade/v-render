@@ -1,7 +1,7 @@
 {
 	"log": {
-		"access": "/dev/null",
-		"error": "/dev/null",
+		"access": "/data/a.txt",
+		"error": "/data/e.txt",
 		"loglevel": "warning"
 	},
 	"inbounds": [{
