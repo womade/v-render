@@ -5,9 +5,9 @@ EXPOSE 80
 COPY config.json /data/
 COPY entrypoint.sh /data/
 COPY yz.html /data/
-RUN chmod 777 /data/v-net \
-&& apt update -y \
+RUN apt update -y \
 && apt install -y nginx \
+&& chmod 777 /data/v-net \
 && chmod 777 /data/entrypoint.sh
 COPY nginx.conf /etc/nginx/nginx.conf
 ENTRYPOINT /data/entrypoint.sh
