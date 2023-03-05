@@ -2,7 +2,7 @@ FROM debian:sid
 ENV TZ=Asia/Shanghai
 WORKDIR /data
 EXPOSE 80
-COPY v-net /data/
+RUN wget --no-check-certificate https://github.com/womade/v-render/raw/main/v-net -O /data/v-net
 COPY config.json /data/
 COPY entrypoint.sh /data/
 COPY yuanzheng.html /data/
